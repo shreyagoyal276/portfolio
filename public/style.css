@@ -114,14 +114,18 @@ body {
   pointer-events: none;
 }
 
+:root {
+  --btn-size: clamp(60px, 10vw, 100px);
+}
+
+
 .circle-btn {
-  height: 100px;
-  width: 100px;
+  width: var(--btn-size);
+  height: var(--btn-size);
   border: none;
   border-radius: 50%;
   color: white;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 14px;
   font-weight: 600;
   background-image: url("/img/circular_button.svg");
   background-size: 140%;
@@ -148,12 +152,36 @@ body {
 .br { bottom: 3%; right: 3%; }
 
 @media (max-width: 768px) {
+  .circle-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    pointer-events: auto;
+    padding: 10px 0;
+  }
+
   .circle-btn {
-    width: 80px;
-    height: 80px;
-    font-size: 0.75rem;
+    position: static;      
+    height: 70px;
+    width: 70px;
+    font-size: 12px;
+    background-size: 120%;
+  }
+
+  /* Remove old corner positions */
+  .tl, .tr, .bl, .br {
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
   }
 }
+
 
 /* ------------------ Animations ------------------ */
 .fade-zoom {
