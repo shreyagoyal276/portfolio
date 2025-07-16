@@ -1,0 +1,9 @@
+.section-block ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .section-block li {
+    margin-bottom: 8px;
+  }
+  
