@@ -157,3 +157,26 @@
   }
 }
 
+
+.timeline-column > .edu-block:nth-of-type(1):hover ~ .timeline .dot1,
+.timeline-column > .edu-block:nth-of-type(1):focus-within ~ .timeline .dot1,
+
+
+.timeline-column > .edu-block:nth-of-type(2):hover ~ .timeline .dot2,
+.timeline-column > .edu-block:nth-of-type(2):focus-within ~ .timeline .dot2,
+
+
+.timeline-column > .edu-block:nth-of-type(3):hover ~ .timeline .dot3,
+.timeline-column > .edu-block:nth-of-type(3):focus-within ~ .timeline .dot3{
+  background: #dffcff;
+  box-shadow: 0 0 10px #b6eff5;
+}
+
+.dot {
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
