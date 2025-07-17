@@ -28,18 +28,18 @@
 .project-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #00e5ff;
+  color: #aaebf3;
   margin-bottom: 4px;
 }
 
 .project-timeline {
   font-size: 0.85rem;
-  color: #a0d5e7;
+  color: #2f687b;
 }
 
 .project-org {
   font-size: 0.9rem;
-  color: #d3d3d3;
+  color: #bbc7d1;
   font-style: italic;
 }
 
@@ -62,8 +62,8 @@
 }
 
 .tech-pill {
-  background: rgba(0, 229, 255, 0.1);
-  color: #00e5ff;
+  background: #246a8237;
+  color: #a9f4fc;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -71,6 +71,7 @@
 }
 
 .project-links {
+  white-space: nowrap;
   display: flex;
   gap: 12px;
   margin-top: auto;

@@ -10,6 +10,8 @@ const projects = [
       "Developed a spam detection website using Machine Learning and NLP",
       "Classifies SMS messages as Spam or Ham"
     ],
+    image:"https://github.com/shreyagoyal276/SPAM-PREDICTOR/blob/main/ouput%20images/Spam.png",
+    poster:"public/img/Spampredictorposter.jpg",
     github: "https://github.com/shreyagoyal276/SPAM-PREDICTOR",
     tech: ["Python", "Scikit-learn", "NLP", "Flask","HTML","CSS"]
   },
@@ -21,6 +23,7 @@ const projects = [
       "Built a Python-based CLI billing system",
       "Includes shopping cart, tax/discount logic, and admin sales tracking"
     ],
+    poster:"public/img/BillingManagement.pdf",
     github: "https://github.com/shreyagoyal276/Billing-Management-System",
     tech: ["Python", "CSV"]
   },
@@ -34,7 +37,32 @@ const projects = [
     ],
     github: "https://github.com/shreyagoyal276/QUIZ_PYTHON",
     tech: ["Python", "CSV"]
+  },
+  {
+    title: "Environmental Parameters of Gwalior",
+    timeline: "Apr 2025 - May 2025",
+    org: "Madhav Institute of Technology and Science",
+    bullets: [
+      "Designed a dashboard using Power BI",
+      "Analyzed environmental parameters of Gwalior over the last 10 years"
+    ],
+    pdf: "public/img/powerBIdashBoard.pdf",
+    tech: ["Power BI", "CSV"]
+  },
+  {
+    title: "Constellation Viewer using graphics.h",
+    timeline: "May 2025",
+    org: "Madhav Institute of Technology and Science",
+    bullets: [
+      "Visualized constellations Orion and Ursa Major using C++ and graphics.h",
+      "Designed an interactive graphical representation of constellations"
+    ],
+    image: "public/img/ursa_major.png", 
+    exe:"public/projects/constellations.exe",
+    tech: ["C++", "graphics.h", "Computer Graphics"]
   }
+  
+  
 ];
 
 const Projects = () => {
@@ -53,8 +81,13 @@ const Projects = () => {
           </ul>
 
           <div className="project-links">
-          {proj.github && <a href={proj.github} target="_blank" rel="noopener noreferrer">🔗GitHub</a>}
-          </div>
+  {proj.github && (<a href={proj.github} target="_blank" rel="noopener noreferrer">🚀GitHub</a>)}
+  {proj.pdf && (<a href={proj.pdf} target="_blank" rel="noopener noreferrer">🪐Dashboard PDF</a>)}
+  {proj.poster && (<a href={proj.poster} target="_blank" rel="noopener noreferrer">🛰️Poster</a>)}
+  {proj.image && (<a href={proj.image} target="_blank" rel="noopener noreferrer">🌌Sample Image</a>)}
+  {proj.exe && (<a href={proj.exe} target="_blank" rel="noopener noreferrer">👨‍🚀EXE File</a>)}
+    </div>
+
           
           <div className="project-tech">
             {proj.tech.map((t, i) => (
