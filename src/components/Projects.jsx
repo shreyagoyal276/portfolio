@@ -11,7 +11,7 @@ const projects = [
       "Classifies SMS messages as Spam or Ham"
     ],
     image:"https://github.com/shreyagoyal276/SPAM-PREDICTOR/blob/main/ouput%20images/Spam.png",
-    poster:"public/img/spampredictorposter.jpg",
+    poster:"public/img/spampredictorposterr.jpg",
     github: "https://github.com/shreyagoyal276/SPAM-PREDICTOR",
     tech: ["Python", "Scikit-learn", "NLP", "Flask","HTML","CSS"]
   },
@@ -23,7 +23,7 @@ const projects = [
       "Built a Python-based CLI billing system",
       "Includes shopping cart, tax/discount logic, and admin sales tracking"
     ],
-    poster:"public/img/billingmanagement.pdf",
+    poster:"public/img/billingmanagementproject.pdf",
     github: "https://github.com/shreyagoyal276/Billing-Management-System",
     tech: ["Python", "CSV"]
   },
