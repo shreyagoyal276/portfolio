@@ -10,8 +10,8 @@ const projects = [
       "Developed a spam detection website using Machine Learning and NLP",
       "Classifies SMS messages as Spam or Ham"
     ],
-    image:"https://github.com/shreyagoyal276/SPAM-PREDICTOR/blob/main/ouput%20images/Spam.png",
-    poster:"public/img/spampredictorposterr.jpg",
+    image: "https://raw.githubusercontent.com/shreyagoyal276/SPAM-PREDICTOR/main/ouput%20images/Spam.png",
+    poster:"/img/spampredictorposterr.jpg",
     github: "https://github.com/shreyagoyal276/SPAM-PREDICTOR",
     tech: ["Python", "Scikit-learn", "NLP", "Flask","HTML","CSS"]
   },
@@ -23,7 +23,7 @@ const projects = [
       "Built a Python-based CLI billing system",
       "Includes shopping cart, tax/discount logic, and admin sales tracking"
     ],
-    poster:"public/img/billingmanagementproject.pdf",
+    poster:"/img/billingmanagementproject.pdf",
     github: "https://github.com/shreyagoyal276/Billing-Management-System",
     tech: ["Python", "CSV"]
   },
@@ -46,7 +46,7 @@ const projects = [
       "Designed a dashboard using Power BI",
       "Analyzed environmental parameters of Gwalior over the last 10 years"
     ],
-    pdf: "public/img/powerBIdashBoard.pdf",
+    pdf: "/img/powerBIdashBoard.pdf",
     tech: ["Power BI", "CSV"]
   },
   {
@@ -57,8 +57,8 @@ const projects = [
       "Visualized constellations Orion and Ursa Major using C++ and graphics.h",
       "Designed an interactive graphical representation of constellations"
     ],
-    image: "public/img/ursa_major.png", 
-    exe:"public/projects/constellations.exe",
+    image: "/img/ursa_major.png", 
+    exe:"/projects/constellations.exe",
     tech: ["C++", "graphics.h", "Computer Graphics"]
   }
   
