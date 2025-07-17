@@ -13,7 +13,7 @@ pnpm-debug.log*
 
 # dotenv environment variables
 .env
-.env.*
+.env.*.local
 
 # IDEs and editors
 .vscode/
