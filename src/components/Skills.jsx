@@ -1,46 +1,98 @@
+import React from 'react';
 import './style/Skills.css';
 
-const Skills = () => (
-    <>
-      <div className="skills-grid">
-        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" title="Python">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-        </a>
-        <a href="https://isocpp.org/" target="_blank" rel="noopener noreferrer" title="C++">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-        </a>
-        <div className="skill-pill">C</div>
-        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer" title="Flask">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" title="HTML5">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" title="CSS3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-        </a>
-        <div className="skill-pill">Supervised Learning</div>
-        <div className="skill-pill">scikit-learn</div>
-        <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" title="MySQL">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-        </a>
-        <div className="skill-pill">OOP</div>
-        <div className="skill-pill">Data Structures</div>
-        <div className="skill-pill">Algorithms</div>
-        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="VS Code">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-        </a>
-      </div>
+const skillData = [
+  {
+    title: "Programming Languages",
+    items: [
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", name: "Python" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", name: "C++" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", name: "C" },
+    ]
+  },
+  {
+    title: "Web Development",
+    items: [
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", name: "HTML" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", name: "CSS" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg", name: "Flask" },
+      {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", name: "MySQL" },
+      {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", name: "React" }
+    ]
+  },
+  {
+    title: "Tools & Platforms",
+    items: [
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", name: "VS Code" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", name: "GitHub" },
+      {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg", name: "Jupyter"}
+    ]
+  },
   
-      <div className="soft-skills">
-        <h3>Soft Skills</h3>
-        <p>Problem Solving, Quick Learner, Team Leadership, Teamwork</p>
-      </div>
-    </>
+  {
+    title: "AI/ML",
+    items: [
+      { name: "Supervised Learning" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg", name: "OpenCV"},
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg", name: "Scikit-Learn" },
+      { name: "NLTK"}
+    ]
+  },
+  {
+    title: "UI/UX",
+    items: [
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", name: "VS Code" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg", name: "GitHub" }
+    ]
+  },
+  {
+    title: "Data Visualization",
+    items: [
+      { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/512px-New_Power_BI_Logo.svg.png",name: "Power BI"},
+      { icon: "https://www.svgrepo.com/show/342141/qgis.svg",name: "QGIS"},
+      { icon: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg", name: "Matplotlib" }
+    ]
+  },
+  {
+    title: "Concepts",
+    items: [
+      { name: "OOPs" },
+      { name: "Data Structures" },
+      { name: "Algorithms" }
+    ]
+  },
+  
+  {
+    title: "Soft Skills",
+    items: [
+      { name: "Problem Solving" },
+      { name: "Quick Learner" },
+      { name: "Teamwork" }
+    ]
+  }
+];
+
+const Skills = () => {
+  return (
+    <div className="skills-tiles">
+      {skillData.map((category, index) => (
+        <div className="skill-card" key={index}>
+          <h3 className="skill-card-title">{category.title}</h3>
+          <div className="skill-card-body">
+            {category.items.map((item, i) =>
+              item.icon ? (
+                <a key={i} className="skill-icon" title={item.name}>
+                  <img src={item.icon} alt={item.name} />
+                </a>
+              ) : (
+                <div key={i} className="skill-pill">{item.name}</div>
+              )
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
   );
-  
-  export default Skills;
-  
+};
+
+export default Skills;
