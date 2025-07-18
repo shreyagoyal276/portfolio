@@ -4,23 +4,31 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Hackathons from './components/Hackathons';
 import Certificates from './components/Certificates';
+import Aboutme from './components/Aboutme';
+import Experience from './components/Experience';
+
 
 const sectionComponents = {
   EDUCATION: <Education />,
   SKILLS: <Skills />,
   PROJECTS: <Projects />,
   HACKATHONS: <Hackathons />,
-  CERTIFICATES: <Certificates />
+  CERTIFICATES: <Certificates />,
+  'ABOUT ME': <Aboutme />,
+  EXPERIENCE: <Experience />
+  
 };
 
 function App() {
   const [title, setTitle] = useState('EDUCATION');
   const [activeSection, setActiveSection] = useState('EDUCATION');
   const [buttonLabels, setButtonLabels] = useState({
-    tl: 'SKILLS',
-    tr: 'HACKATHONS',
-    bl: 'PROJECTS',
-    br: 'CERTIFICATES'
+    b1: 'SKILLS',
+    b2: 'HACKATHONS',
+    b3: 'PROJECTS',
+    b4: 'CERTIFICATES',
+    b5: 'EXPERIENCE',
+    b6: 'ABOUT ME'
   });
 
   const [showButtons, setShowButtons] = useState(false);
@@ -65,9 +73,9 @@ function App() {
     }, 500);
   };
 
-  const buttonPositions = ['tl', 'tr', 'bl', 'br'];
+  const buttonPositions = ['b1', 'b2', 'b3', 'b4','b5','b6'];
 
-  // ✅ Show buttons only when info-screen is in view
+  // Show buttons only when info-screen is in view
   useEffect(() => {
     const handleScroll = () => {
       const sectionTop = infoScreenRef.current?.getBoundingClientRect().top;
