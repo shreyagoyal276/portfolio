@@ -137,7 +137,6 @@ h1:hover{
 @media (max-width: 768px) {
   .circle-buttons {
     position: absolute;
-    margin-top: 10px;
     width: 100%;
     height: auto;
     display: flex;
