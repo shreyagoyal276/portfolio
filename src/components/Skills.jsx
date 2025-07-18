@@ -11,6 +11,14 @@ const skillData = [
     ]
   },
   {
+    title: "Tools & Platforms",
+    items: [
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", name: "VS Code" },
+      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", name: "GitHub" },
+      {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg", name: "Jupyter"}
+    ]
+  },
+  {
     title: "Web Development",
     items: [
       { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", name: "HTML" },
@@ -20,14 +28,7 @@ const skillData = [
       {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", name: "React" }
     ]
   },
-  {
-    title: "Tools & Platforms",
-    items: [
-      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", name: "VS Code" },
-      { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", name: "GitHub" },
-      {icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg", name: "Jupyter"}
-    ]
-  },
+  
   
   {
     title: "AI/ML",

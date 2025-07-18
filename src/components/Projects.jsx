@@ -28,23 +28,12 @@ const projects = [
     tech: ["Python", "CSV"]
   },
   {
-    title: "Quiz Game",
-    timeline: "Sep 2024 – Jan 2025",
-    org: "St. Paul’s School, Gwalior",
-    bullets: [
-      "Created a customizable quiz game",
-      "Users can pick categories and add questions dynamically"
-    ],
-    github: "https://github.com/shreyagoyal276/QUIZ_PYTHON",
-    tech: ["Python", "CSV"]
-  },
-  {
     title: "Environmental Parameters of Gwalior",
     timeline: "Apr 2025 - May 2025",
     org: "Madhav Institute of Technology and Science",
     bullets: [
-      "Designed a dashboard using Power BI",
-      "Analyzed environmental parameters of Gwalior over the last 10 years"
+      "Visualized 10 years of Gwalior's climate data",
+      "Created an interactive dashboard to raise public awareness and support environmental decision-making"
     ],
     pdf: "/img/powerBIdashBoard.pdf",
     tech: ["Power BI", "CSV"]
@@ -60,6 +49,17 @@ const projects = [
     image: "/img/ursa_major.png", 
     exe:"/projects/constellations.exe",
     tech: ["C++", "graphics.h", "Computer Graphics"]
+  },
+  {
+    title: "Quiz Game",
+    timeline: "Sep 2024 – Jan 2025",
+    org: "St. Paul’s School, Gwalior",
+    bullets: [
+      "Created a customizable quiz game",
+      "Users can pick categories and add questions dynamically"
+    ],
+    github: "https://github.com/shreyagoyal276/QUIZ_PYTHON",
+    tech: ["Python", "CSV"]
   }
   
   

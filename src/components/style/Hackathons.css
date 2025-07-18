@@ -1,23 +1,24 @@
 .hackathon-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 20px;
   padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .hackathon-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 16px;
   color: white;
   font-family: 'Segoe UI', sans-serif;
-  transition: transform 0.3s;
 }
 
 .hackathon-card:hover {
-  transform: translateY(-4px);
+  backdrop-filter: blur(6px);
+  scale: 1.01;
   border-color: #00e0ff;
 }
 
@@ -25,6 +26,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#date{
+  white-space: nowrap;
 }
 
 .hackathon-org {
@@ -45,30 +50,30 @@
   display: inline-block;
   background: #00e0ff22;
   color: #00e0ff;
-  border: 1px solid #00e0ff88;
+  border: 1px solid #077a8988;
   border-radius: 12px;
   padding: 4px 10px;
-  margin: 4px 6px 0 0;
+  margin: 6px 6px 0 0;
   font-size: 0.85rem;
 }
 
 .hackathon-links {
   white-space: nowrap;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-top: auto;
 }
 
 .hackathon-links a {
   margin-top: 12px;
   color: #eafdff;
-
   padding-left: 5px;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
   transition: background 0.3s ease;
 }
+
 .hackathon-links a:hover {
   color: #bff3f9e3;
 }
