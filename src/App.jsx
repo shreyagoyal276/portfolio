@@ -1,34 +1,33 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Hackathons from './components/Hackathons';
 import Certificates from './components/Certificates';
 import Aboutme from './components/Aboutme';
-import Experience from './components/Experience';
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Photos from './components/Photos';
+
+
+import MysteryStar from './components/MysteryStar';
 
 const sectionComponents = {
-  EDUCATION: <Education />,
   SKILLS: <Skills />,
   PROJECTS: <Projects />,
   HACKATHONS: <Hackathons />,
   CERTIFICATES: <Certificates />,
-  'ABOUT ME': <Aboutme />,
-  EXPERIENCE: <Experience />
+  'ABOUT ME': <Aboutme />
   
 };
 
-function App() {
-  const [title, setTitle] = useState('EDUCATION');
-  const [activeSection, setActiveSection] = useState('EDUCATION');
+function MainApp() {
+  const [title, setTitle] = useState('ABOUT ME');
+  const [activeSection, setActiveSection] = useState('ABOUT ME');
   const [buttonLabels, setButtonLabels] = useState({
     b1: 'SKILLS',
     b2: 'HACKATHONS',
     b3: 'PROJECTS',
     b4: 'CERTIFICATES',
-    b5: 'EXPERIENCE',
-    b6: 'ABOUT ME'
   });
 
   const [showButtons, setShowButtons] = useState(false);
@@ -73,7 +72,7 @@ function App() {
     }, 500);
   };
 
-  const buttonPositions = ['b1', 'b2', 'b3', 'b4','b5','b6'];
+  const buttonPositions = ['b1', 'b2', 'b3', 'b4'];
 
   // Show buttons only when info-screen is in view
   useEffect(() => {
@@ -91,6 +90,7 @@ function App() {
   return (
     <>
       <section className="main-screen">
+        <MysteryStar />
         <div className="name-bar">
           <h1>SHREYA GOYAL</h1>
         </div>
@@ -124,4 +124,16 @@ function App() {
   );
 }
 
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainApp/>} />
+        <Route path="/photos" element={<Photos />} />
+      </Routes>
+    </Router>
+  );
+}
+
 export default App;
+

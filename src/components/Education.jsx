@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/Education.css';
 
+
 const Education = () => {
   return (
     <div className="education-container">

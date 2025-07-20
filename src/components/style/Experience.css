@@ -1,0 +1,52 @@
+.experience-container {
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .experience-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s ease;
+    text-align: left;
+  }
+  
+  .experience-card:hover {
+    border: 1px solid rgba(90, 219, 255, 0.825);
+  }
+  
+  .experience-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #c0f3ff;
+  }
+  
+  .experience-org{
+    font-size: 1.5rem;
+    color: #3ab0ff;
+  } 
+  
+  .experience-time {
+    font-size: 0.95rem;
+    color: #cbdce7;
+    margin: 4px 0;
+  }
+  
+  .experience-desc {
+    font-size: 0.92rem;
+    margin-top: 10px;
+    color: #dcefff;
+  }
+  

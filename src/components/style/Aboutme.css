@@ -1,0 +1,152 @@
+.aboutme-container {
+    padding: 0px 20px;
+    border-radius: 16px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+    
+  .bio-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .bio-box:hover{
+    border: 1px solid rgba(90, 166, 204, 0.975);
+  }
+  .highlight {
+    color: #ddf6fd;
+    font-weight: bold;
+  }
+  
+  .subheading {
+    font-size: x-large;
+    margin: 20px 0 10px;
+    color: #e9f9ff;
+    text-align: center;
+  }
+
+  .education-heading{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
+  }
+
+  .education-in-about {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+  }
+  
+
+
+
+  .hobby-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .hobby-list li {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+
+  .hobby-list li:hover{
+    border: 1px solid rgba(57, 179, 236, 0.584);
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.03);
+  }
+  
+  .photo-gallery-button {
+    text-align: center;
+  }
+  
+  .view-gallery-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #aee0f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .view-gallery-btn:hover {
+    border: 1px solid rgba(0, 255, 251, 0.864);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+
+  .contact-section {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 2px 40px;
+  }
+
+  .contact-section:hover{
+    border: 1px solid rgba(0, 255, 251, 0.864);
+  }
+  
+  .contact-section h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .social-links.centered {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .social-links img {
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  

@@ -131,13 +131,13 @@ h1:hover{
   transform: scale(1.02);
 }
 
-/* Positioning */
+/* Positioning
 .b1 { bottom: 200px; left: 10px; }
-.b2 { bottom: 200px; right: 10px; }
-.b3 { bottom: 105px; left: 10px; }
-.b4 { bottom: 105px; right: 10px; }
-.b5 { bottom: 10px; left: 10px; }
-.b6 { bottom: 10px; right: 10px; }
+.b2 { bottom: 200px; right: 10px; } */
+.b1 { bottom: 105px; left: 10px; }
+.b2 { bottom: 105px; right: 10px; }
+.b3 { bottom: 10px; left: 10px; }
+.b4 { bottom: 10px; right: 10px; }
 
 @media (max-width: 768px) {
   .circle-buttons {
@@ -154,13 +154,13 @@ h1:hover{
     position: static;      
     height: 50px;
     width: 50px;
-    font-size: 6px;
+    font-size: 12px;
     background-size: 120%;
     
   }
 
   /* Remove old corner positions */
-  .b1,.b2,.b3,.b4,.b5,.b6 {
+  .b1,.b2,.b3,.b4{
     top: auto;
     left: auto;
     right: auto;
