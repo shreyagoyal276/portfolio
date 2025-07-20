@@ -14,22 +14,27 @@ const images = [
 ];
 
 const Photos = () => {
-    return (
-      <div className="photo-gallery-container">
-        <h2 className="photo-gallery-heading">My Photo Gallery📸</h2>
-        <div className="masonry">
-          {images.map((src, index) => (
-            <div className="masonry-item" key={index}>
-              <img src={src} alt={`Gallery ${index}`} />
-            </div>
-          ))}
-        </div>
-        <div>
-         <a href="/" className="back-button">← Back</a>
-        </div>
-        
+  return (
+    <div className="photo-gallery-container">
+      <h2 className="photo-gallery-heading">My Photo Gallery 📸</h2>
+
+      <div className="masonry">
+        {images.map((src, index) => (
+          <div className="masonry-item" key={index}>
+            <img
+              src={src}
+              alt={`Gallery ${index}`}
+              loading="lazy"
+            />
+          </div>
+        ))}
       </div>
-    );
-  };
+
+      <div className="back-button-container">
+        <a href="/" className="back-button">← Back</a>
+      </div>
+    </div>
+  );
+};
 
 export default Photos;
