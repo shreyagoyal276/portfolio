@@ -136,7 +136,8 @@
   }
 
   .timeline {
-    left: 20%;
+    /* left: 20%; */
+    left: 0%;
   }
 
   .edu-grid {

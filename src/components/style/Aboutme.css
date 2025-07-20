@@ -1,12 +1,14 @@
 .aboutme-container {
-    padding: 0px 20px;
+    padding: 20px 20px;
     border-radius: 16px;
     color: white;
     font-family: 'Segoe UI', sans-serif;
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 40px;
   }
+
+/* _________________________________________ */
+
     
   .bio-box {
     background: rgba(255, 255, 255, 0.04);
@@ -14,48 +16,46 @@
     padding: 20px;
     border-radius: 12px;
     margin: auto;
-    margin-bottom: 30px;
     line-height: 1.6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .bio-box:hover{
-    border: 1px solid rgba(90, 166, 204, 0.975);
-  }
+    border-color: #00e0ff;
+}
   .highlight {
     color: #ddf6fd;
     font-weight: bold;
   }
   
-  .subheading {
-    font-size: x-large;
-    margin: 20px 0 10px;
-    color: #e9f9ff;
-    text-align: center;
-  }
 
-  .education-heading{
+  /* _________________________________________ */
+
+  .subheading {
     text-align: center;
     font-size: xx-large;
+    margin-top: 40px;
     margin-bottom: 20px;
   }
+
+
+  /* _________________________________________ */
 
   .education-in-about {
     padding-top: 10px;
     padding-bottom: 20px;
-    border-radius: 12px;
   }
   
 
+  /* _________________________________________ */
 
 
   .hobby-list {
     list-style: none;
-    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 60px;
   }
   
   .hobby-list li {
@@ -67,14 +67,16 @@
   }
 
   .hobby-list li:hover{
-    border: 1px solid rgba(57, 179, 236, 0.584);
-  }
+    border-color: #00e0ff;
+}
   
+
+  /* _________________________________________ */
+
   .gallery-grid {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin: auto;
+    gap: 10px;
     margin-bottom: 10px;
   }
   
@@ -107,11 +109,13 @@
   }
   
   .view-gallery-btn:hover {
-    border: 1px solid rgba(0, 255, 251, 0.864);
+    border-color: #00e0ff;
     color: white;
     transform: scale(1.05);
   }
   
+  /* _________________________________________ */
+
 
   .contact-section {
     background: rgba(255, 255, 255, 0.04);
@@ -119,19 +123,19 @@
     border-radius: 12px;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     padding: 2px 40px;
   }
 
   .contact-section:hover{
-    border: 1px solid rgba(0, 255, 251, 0.864);
-  }
+    border-color: #00e0ff;
+}
   
   .contact-section h3 {
-    font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
     margin: 10px;
+    margin-bottom: 20px;
   }
   
   .social-links.centered {
@@ -152,23 +156,29 @@
     transform: scale(1.05);
   }
   
+  /* _________________________________________ */
+
 
   @media (max-width: 768px){
     .bio-box{
-        width: 60%;
+        width: 100%;
     }
-    .experience-in-about{
+    /* .experience-in-about{
         margin: auto;
-    }
-    .hobby-list{
+    } */
+    /* .hobby-list{
         width: 60%;
-    }
+    } */
     .gallery-img{
         height: 200px;
-        width: 36%;
+        /* width: 36%; */
+        width: 100%;
     }
     .gallery-grid{
         gap: 5px;
+    }
+    .contact-section{
+        width:82vw;
     }
   }
   

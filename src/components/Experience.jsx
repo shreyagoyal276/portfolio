@@ -7,7 +7,7 @@ const experiences = [
     org: " Aerospace Club",
     time: "Oct 2024 – Present",
     description:
-      "Prepared content event posters, and contributed to activities of the Aerospace Club.",
+      "Prepared content for event posters, and contributed to activities of the Aerospace Club.",
     type: "Volunteering",
   }
 ];

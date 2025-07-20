@@ -21,43 +21,40 @@ const Aboutme = () => {
       <div className="bio-box">
         <p>
           I'm <span className="highlight">Shreya Goyal</span>, B.Tech CSE student at 
-          <strong> MITS Gwalior</strong>. With an endless curiosity, I love exploring multiple tech fields including AI/ML,
-          Space, Quantum Computing and more.
+          <strong> MITS Gwalior</strong>. 
+          I enjoy exploring different tech domains and love learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies, and I’m especially curious about the intersection of Quantum and Machine Learning.
         </p>
         <p>
-          I'm passionate about building practical projects and participating in hackathons to solve real-world problems.
-          I balance my academic rigor with stargazing and photography, which reflect my creative side.
+        I like building real-world projects, participating in hackathons, and solving problems that have meaningful impact. I’ve worked with Python, C/C++, and some web technologies, and I also enjoy coding competitions to sharpen my logic and problem-solving skills.
+In the future, I look forward to exploring research-based opportunities and working in emerging fields like Quantum Machine Learning.
+                    
         </p>
       </div>
 
       <div className="education-in-about">
-        <h3 className='education-heading'>EDUCATION</h3>
+        <h3 className='subheading'>EDUCATION</h3>
         <Education />
       </div>
 
       <div className="experience-in-about">
-        <h3 className='education-heading'>EXPERIENCE</h3>
+        <h3 className='subheading'>EXPERIENCE</h3>
         <Experiene />
       </div>
 
-      <div className="heatmap">
-        <h3 className='education-heading'>CODING </h3>
+      {/* <div className="heatmap">
+        <h3 className='subheading'>CODING </h3>
         <CompetitiveHeatmap />
-      </div>
+      </div> */}
 
-      <h3 className="subheading">💫 Interests & Hobbies</h3>
+      <h3 className="subheading">HOBBIES</h3>
       <ul className="hobby-list">
         {hobbies.map((hobby, i) => (
           <li key={i}>{hobby}</li>
         ))}
       </ul>
 
-      
-
-
-
       <div className="contact-section">
-        <h3 className="subheading contact-sub">Contact</h3>
+        <h3 className="subheading">CONTACT</h3>
         <div className="social-links centered">
           <a href="mailto:shreyagoyal401@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
             <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
@@ -71,7 +68,7 @@ const Aboutme = () => {
         </div>
       </div>
 
-      <h3 className="subheading">My Gallery📸 </h3>
+      <h3 className="subheading">CAPTURES📸 </h3>
       <div className="gallery-grid">
         {gallery.map((img, i) => (
           <img key={i} src={img} alt={`gallery-${i}`} className="gallery-img" />
