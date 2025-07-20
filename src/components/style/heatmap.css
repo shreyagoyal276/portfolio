@@ -5,11 +5,9 @@
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: auto;
   }
   
   .heatmap-scroll {
-    overflow-x: auto;
     width: 100%;
   }
   
