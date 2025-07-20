@@ -2,6 +2,7 @@ import React from 'react';
 import './style/Aboutme.css';
 import Education from './Education';
 import Experiene from './Experience';
+import CompetitiveHeatmap from './CompetitiveHeatmap';
 
 const hobbies = [
   "🌌 Stargazing",
@@ -37,6 +38,11 @@ const Aboutme = () => {
       <div className="experience-in-about">
         <h3 className='education-heading'>EXPERIENCE</h3>
         <Experiene />
+      </div>
+
+      <div className="heatmap">
+        <h3 className='education-heading'>CODING </h3>
+        <CompetitiveHeatmap />
       </div>
 
       <h3 className="subheading">💫 Interests & Hobbies</h3>

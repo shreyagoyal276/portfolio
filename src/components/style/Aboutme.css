@@ -3,7 +3,7 @@
     border-radius: 16px;
     color: white;
     font-family: 'Segoe UI', sans-serif;
-
+    overflow-x: visible;
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -13,6 +13,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 12px;
+    margin: auto;
     margin-bottom: 30px;
     line-height: 1.6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -53,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
     gap: 15px;
   }
   
@@ -69,16 +71,17 @@
   }
   
   .gallery-grid {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: center;
     gap: 15px;
+    margin: auto;
     margin-bottom: 10px;
   }
   
   .gallery-img {
-    width: 100%;
+    width: 300px;
     border-radius: 10px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
@@ -114,6 +117,7 @@
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 2px 40px;
@@ -149,4 +153,22 @@
   }
   
 
+  @media (max-width: 768px){
+    .bio-box{
+        width: 60%;
+    }
+    .experience-in-about{
+        margin: auto;
+    }
+    .hobby-list{
+        width: 60%;
+    }
+    .gallery-img{
+        height: 200px;
+        width: 36%;
+    }
+    .gallery-grid{
+        gap: 5px;
+    }
+  }
   

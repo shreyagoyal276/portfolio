@@ -48,7 +48,7 @@ const hackathons = [
     description: "A platform allowing users to express, explore, and empower thoughts freely. Designed for mental wellness with interactive and calming UI.",
     tags: ["Frontend", "Mental Health", "Team Project", "Creative UI", "3 Phase"],
     github: "https://github.com/shreyagoyal276/CalmCoders",
-    project: "https://minddump-jbfh.onrender.com/",
+    project_link: "https://minddump-jbfh.onrender.com/",
     platform: "Unstop",
     certificate: "/certificates/hackorbit2025.png"
   },
@@ -97,8 +97,8 @@ const Hackathons = () => {
             {hack.github && (
               <a href={hack.github} target="_blank" rel="noreferrer">🚀GitHub </a>
             )}
-            {hack.project && (
-              <a href={hack.project} target="_blank" rel="noreferrer">🛰️Project </a>
+            {hack.project_link && (
+              <a href={hack.project_link} target="_blank" rel="noreferrer">🛰️Project </a>
             )}
             {hack.certificate && (
               <a href={hack.certificate} target="_blank" rel="noreferrer">🌌Certificate</a>
