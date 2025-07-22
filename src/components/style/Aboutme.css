@@ -3,8 +3,13 @@
     border-radius: 16px;
     color: white;
     font-family: 'Segoe UI', sans-serif;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .aboutme-cont {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
 /* _________________________________________ */
@@ -13,10 +18,10 @@
   .bio-box {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 17px;
     border-radius: 12px;
-    margin: auto;
     line-height: 1.6;
+    margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .bio-box:hover{
@@ -26,7 +31,23 @@
     color: #ddf6fd;
     font-weight: bold;
   }
-  
+
+  .profile-img{
+    width: 200px;
+    border-radius: 12px;
+    border: 1px solid #606060;
+    filter: grayscale(0.8) brightness(0.7) saturate(1.5);;
+  }
+    .profile-img:hover{
+        opacity: 0.94;
+        border: 1px solid #00e0ff;
+        filter: grayscale(0);
+    }
+    .wrapp{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 
   /* _________________________________________ */
 
@@ -179,6 +200,9 @@
     }
     .contact-section{
         width:82vw;
+    }
+    .wrapp{
+        flex-direction: column;
     }
   }
   

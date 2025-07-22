@@ -17,18 +17,25 @@ const gallery = [
 
 const Aboutme = () => {
   return (
+    <div className='aboutme-cont'>
     <div className="aboutme-container">
-      <div className="bio-box">
-        <p>
-          I'm <span className="highlight">Shreya Goyal</span>, B.Tech CSE student at 
-          <strong> MITS Gwalior</strong>. 
-          I enjoy exploring different tech domains and love learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies, and I’m especially curious about the intersection of Quantum and Machine Learning.
-        </p>
-        <p>
-        I like building real-world projects, participating in hackathons, and solving problems that have meaningful impact. I’ve worked with Python, C/C++, and some web technologies, and I also enjoy coding competitions to sharpen my logic and problem-solving skills.
-In the future, I look forward to exploring research-based opportunities and working in emerging fields like Quantum Machine Learning.
-                    
-        </p>
+      <div className='wrapp'>
+        <div className="bio-box">
+          <p>
+            I'm <span className="highlight">Shreya Goyal</span>, B.Tech CSE student at 
+            <strong> MITS Gwalior</strong>. 
+            I enjoy exploring different tech domains and love learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies, and I’m especially curious about the intersection of Quantum and Machine Learning.
+          </p>
+          <p>
+            I like building real-world projects, participating in hackathons, and solving problems that have meaningful impact. I’ve worked with Python, C/C++, and some web technologies, and I also enjoy coding competitions to sharpen my logic and problem-solving skills.
+            In the future, I look forward to exploring research-based opportunities and working in emerging fields like Quantum Machine Learning.          
+          </p>
+        </div>
+
+        <div className='img-box'>
+          <img src={'/img/profile.jpg'} alt={"Shreya Goyal"} className="profile-img" />
+        </div>
+
       </div>
 
       <div className="education-in-about">
@@ -77,6 +84,7 @@ In the future, I look forward to exploring research-based opportunities and work
       <div className="photo-gallery-button">
         <a href="/photos" className="view-gallery-btn">📸 See All Photos</a>
       </div>
+    </div>
     </div>
   );
 };
