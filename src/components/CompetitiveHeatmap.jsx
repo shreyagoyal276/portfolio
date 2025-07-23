@@ -1,4 +1,4 @@
-<!-- 
+/*
 import React, { useEffect, useState } from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
@@ -117,4 +117,4 @@ const CompetitiveHeatmap = () => {
 };
 
 export default CompetitiveHeatmap;
--->
+*/
