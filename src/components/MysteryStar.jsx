@@ -17,7 +17,7 @@ const facts = [
 
 const getRandomPosition = () => ({
   top: `${(Math.random() * 30)+5}vh`,
-  left: `${Math.random() * 100}vw`
+  left: `${Math.random() * 80 + 10}vw`
 });
 
 const MysteryStar = () => {
@@ -43,7 +43,7 @@ const MysteryStar = () => {
   const showCard = (e, fact) => {
     const rect = e.target.getBoundingClientRect();
     let x = rect.left + rect.width / 2;
-    let y = rect.top;
+    let y = rect.top + rect.width / 2;
   
     const padding = 20; 
     
@@ -52,9 +52,11 @@ const MysteryStar = () => {
     } else if (x < 20) {
       x = 20;
     }
+
+
   
     if (y < 100) {
-      y = rect.bottom + 60;
+      y = rect.bottom + 80;
     }
   
     setCard({ show: true, x, y, text: fact });

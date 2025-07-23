@@ -36,7 +36,7 @@
     width: 200px;
     border-radius: 12px;
     border: 1px solid #606060;
-    filter: grayscale(0.8) brightness(0.7) saturate(1.5);;
+    filter: grayscale(1) brightness(0.7);;
   }
     .profile-img:hover{
         opacity: 0.94;

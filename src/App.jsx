@@ -94,6 +94,17 @@ function MainApp() {
         <div className="name-bar">
           <h1>SHREYA GOYAL</h1>
         </div>
+        <div className="under-name postion">
+          <a href="mailto:shreyagoyal401@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
+          </a>
+          <a href="https://github.com/shreyagoyal276" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/shreyagoyal276" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" />
+          </a>
+        </div>
       </section>
 
       <section className="info-screen" ref={infoScreenRef}>

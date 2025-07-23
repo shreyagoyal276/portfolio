@@ -66,9 +66,10 @@ const skillData = [
   {
     title: "Soft Skills",
     items: [
+      { name: "Teamwork" },
+      { name: "Leadership" },
       { name: "Problem Solving" },
       { name: "Quick Learner" },
-      { name: "Teamwork" }
     ]
   }
 ];

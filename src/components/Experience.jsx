@@ -5,9 +5,17 @@ const experiences = [
   {
     role: "Content Writer",
     org: " Aerospace Club",
-    time: "Oct 2024 – Present",
+    time: "Oct 2024 - Present",
     description:
-      "Prepared content for event posters, and contributed to activities of the Aerospace Club.",
+      "Prepared content for variours topics and events, and took part in events like Celestial Capture, Galactic Horizon - an interaction session with ISRO scientist. Also explored space and ML through the club’s Space Study Program (SSP) while connecting with like-minded peers.",
+    type: "Volunteering",
+  },
+  {
+    role: "Student Coordinator",
+    org: "Competitive Programming",
+    time: "Nov 2024 - Present",
+    description:
+      "Helped students get started with coding by making them register on platforms like Codeforces and LeetCode, shared updates about upcoming contests, and tried to build an active and encouraging coding environment for everyone.",
     type: "Volunteering",
   }
 ];

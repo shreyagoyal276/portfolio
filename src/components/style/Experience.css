@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   .experience-card {
@@ -17,9 +18,9 @@
     padding: 20px;
     color: white;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     transition: transform 0.2s ease;
-    text-align: left;
+    text-align: justify;
   }
   
   .experience-card:hover {

@@ -11,6 +11,17 @@
     font-weight: 600;
     font-family: cursive;
   }
+
+  .photo-gallery-subheading {
+    display: flex;
+    max-width: 50%;
+    justify-self: end;
+    color: rgb(182, 244, 255);
+    font-size: 1.1rem;
+    margin: 10px;
+    text-align: right;
+    font-family: cursive;
+  }
   
   .masonry {
     column-count: 4;

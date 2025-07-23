@@ -2,12 +2,12 @@ import React from 'react';
 import './style/Aboutme.css';
 import Education from './Education';
 import Experiene from './Experience';
-import CompetitiveHeatmap from './CompetitiveHeatmap';
+// import CompetitiveHeatmap from './CompetitiveHeatmap';
 
 const hobbies = [
   "🌌 Stargazing",
   "📷 Photography",
-  "🧪 Research & Exploration"
+  "🧪 Exploration"
 ];
 
 const gallery = [
@@ -26,9 +26,11 @@ const Aboutme = () => {
             <strong> MITS Gwalior</strong>. 
             I enjoy exploring different tech domains and love learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies, and I’m especially curious about the intersection of Quantum and Machine Learning.
           </p>
+          <br></br>
           <p>
-            I like building real-world projects, participating in hackathons, and solving problems that have meaningful impact. I’ve worked with Python, C/C++, and some web technologies, and I also enjoy coding competitions to sharpen my logic and problem-solving skills.
-            In the future, I look forward to exploring research-based opportunities and working in emerging fields like Quantum Machine Learning.          
+            I like building real-world projects, participating in hackathons, and solving real-world problems. I’ve worked with Python, C/C++, and some web technologies, and I also participate in coding competitions to sharpen my logic and problem-solving skills.
+            </p><br></br>
+            <p> In the future, I am looking forward to explore opportunities in AI/ML and working in emerging fields like Quantum Machine Learning.          
           </p>
         </div>
 
@@ -75,7 +77,7 @@ const Aboutme = () => {
         </div>
       </div>
 
-      <h3 className="subheading">CAPTURES📸 </h3>
+      <h3 className="subheading">CAPTURES📸</h3>
       <div className="gallery-grid">
         {gallery.map((img, i) => (
           <img key={i} src={img} alt={`gallery-${i}`} className="gallery-img" />
