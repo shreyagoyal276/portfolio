@@ -96,7 +96,7 @@
   color: #bff3f9e3;
 }
 
-/* 📱 Responsive */
+/*  Responsive */
 @media (max-width: 768px) {
   .project-card {
     width: 100%;

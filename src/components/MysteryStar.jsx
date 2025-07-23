@@ -28,7 +28,7 @@ const MysteryStar = () => {
   useEffect(() => {
     const generatedStars = [];
     for (let i = 0; i < 20; i++) {
-      const clickable = i < 5;
+      const clickable = i <5;
       generatedStars.push({
         ...getRandomPosition(),
         clickable,
@@ -42,30 +42,34 @@ const MysteryStar = () => {
 
   const showCard = (e, fact) => {
     const rect = e.target.getBoundingClientRect();
-    let x = rect.left + rect.width / 2;
-    let y = rect.top + rect.width / 2;
+    const cardWidth = 260;
+    const cardHeight = 120;
+    const padding = 10;
   
-    const padding = 20; 
-    
-    if (x + padding > window.innerWidth) {
-      x = window.innerWidth - padding - 50;
-    } else if (x < 20) {
-      x = 20;
+    // Ideal centered position over star
+    let x = rect.left + rect.width / 2 - cardWidth / 2;
+    let y = rect.top + rect.height / 2 - cardHeight / 2;
+  
+    // Clamp X within screen bounds
+    if (x < padding) x = padding;
+    if (x + cardWidth > window.innerWidth - padding) {
+      x = window.innerWidth - cardWidth - padding;
     }
-
-
   
-    if (y < 100) {
-      y = rect.bottom + 80;
+    // Clamp Y within screen bounds
+    if (y < padding) y = padding;
+    if (y + cardHeight > window.innerHeight - padding) {
+      y = window.innerHeight - cardHeight - padding;
     }
   
     setCard({ show: true, x, y, text: fact });
   
     clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => {
-      setCard({ ...card, show: false });
-    }, 4000);
+      setCard(prev => ({ ...prev, show: false }));
+    }, 3000);
   };
+  
   
 
   return (
@@ -80,7 +84,9 @@ const MysteryStar = () => {
       ))}
 
       {card.show && (
-        <div className="mystery-card" style={{ top: card.y, left: card.x }}>
+        <div className="mystery-card" 
+        style={{ top: card.y, left: card.x }}>
+
           <h4>🌌 Space Fact</h4>
           <p>{card.text}</p>
         </div>

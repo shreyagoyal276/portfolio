@@ -40,7 +40,6 @@
   
   .mystery-card {
     position: fixed;
-    transform: translate(-50%, -100%);
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -49,9 +48,13 @@
     padding: 14px 20px;
     border-radius: 12px;
     max-width: 260px;
+    width: max-content;
     z-index: 1000;
-    animation: fadeIn 0.3s ease;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
+  
+  
   
   .mystery-card h4 {
     margin: 0 0 6px;
@@ -86,5 +89,22 @@
     50% {
       opacity: 1;
     }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .mystery-card {
+      max-width: 220px;
+      font-size: 0.85rem;
+      padding: 10px 14px;
+    }
+  
+    .mystery-card h4 {
+      font-size: 1rem;
+    }
+  
+    .mystery-card p {
+      font-size: 0.8rem;
+    }
+
   }
   

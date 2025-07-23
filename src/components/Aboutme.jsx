@@ -23,13 +23,11 @@ const Aboutme = () => {
           <p>
             I'm <span className="highlight">Shreya Goyal</span>, B.Tech CSE student at 
             <strong> MITS Gwalior</strong>. 
-            I enjoy exploring different tech domains and love learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies, and I’m especially curious about the intersection of Quantum and Machine Learning.
-          </p>
-          <br></br>
+            I enjoy exploring various technology domains and have a strong inclination toward learning through hands-on projects. My interests lie in AI/ML, Quantum Computing, and space technologies
+            </p>
           <p>
-            I like building real-world projects, participating in hackathons, and solving real-world problems. I’ve worked with Python, C/C++, and some web technologies, and I also participate in coding competitions to sharpen my logic and problem-solving skills.
-            </p><br></br>
-            <p> In the future, I am looking forward to explore opportunities in AI/ML and working in emerging fields like Quantum Machine Learning.          
+          I actively work on real-world projects and participate in hackathons. I regularly take part in coding competitions to strengthen my logic and problem-solving skills.
+          I am looking forward to explore opportunities in AI/ML and work in emerging fields like Quantum Machine Learning.          
           </p>
         </div>
 
@@ -83,7 +81,7 @@ const Aboutme = () => {
         ))}
       </div>
       <div className="photo-gallery-button">
-        <a href="/photos" className="view-gallery-btn">📸 See All Photos</a>
+        <a href="/photos" className="view-gallery-btn">See All Photographs</a>
       </div>
     </div>
   );
