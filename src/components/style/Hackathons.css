@@ -1,18 +1,28 @@
 .hackathon-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 30px;
-  margin-left: 80px;
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  margin-left: 60px;
   margin-right: 80px;
+  margin-bottom: 80px;
 }
 
 .hackathon-card {
   background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px;
-  border-radius: 16px;
-  color: white;
+  width: 300px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -77,3 +87,16 @@
 .hackathon-links a:hover {
   color: #bff3f9e3;
 }
+
+
+@media (max-width: 768px) {
+  .hackathon-container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .hackathon-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+

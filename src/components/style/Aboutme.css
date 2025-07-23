@@ -3,13 +3,9 @@
     border-radius: 16px;
     color: white;
     font-family: 'Segoe UI', sans-serif;
+    margin: 0 auto;
     margin-left: 80px;
     margin-right: 80px;
-  }
-
-  .aboutme-cont {
-    margin-left: 100px;
-    margin-right: 100px;
   }
 
 /* _________________________________________ */
@@ -95,18 +91,18 @@
   /* _________________________________________ */
 
   .gallery-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 10px;
     margin-bottom: 10px;
+    justify-self: center;
   }
   
   .gallery-img {
-    width: 300px;
+    width: 200px;
     border-radius: 10px;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
   }
   
   .gallery-img:hover {
@@ -192,11 +188,10 @@
     } */
     .gallery-img{
         height: 200px;
-        /* width: 36%; */
         width: 100%;
     }
     .gallery-grid{
-        gap: 5px;
+          gap: 10px;
     }
     .contact-section{
         width:82vw;
@@ -204,5 +199,10 @@
     .wrapp{
         flex-direction: column;
     }
+    .aboutme-container{      
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
   }
   

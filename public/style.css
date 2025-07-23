@@ -180,10 +180,10 @@ h1:hover{
   }
 
   .circle-btn {
-    position: static;      
+    position: relative;      
     height: 50px;
     width: 50px;
-    font-size: 14px;
+    font-size: 12px;
     background-size: 120%;
     
   }

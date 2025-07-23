@@ -17,7 +17,6 @@ const gallery = [
 
 const Aboutme = () => {
   return (
-    <div className='aboutme-cont'>
     <div className="aboutme-container">
       <div className='wrapp'>
         <div className="bio-box">
@@ -79,14 +78,13 @@ const Aboutme = () => {
 
       <h3 className="subheading">CAPTURES📸</h3>
       <div className="gallery-grid">
-        {gallery.map((img, i) => (
-          <img key={i} src={img} alt={`gallery-${i}`} className="gallery-img" />
+        {gallery.map((img) => (
+          <img src={img} className="gallery-img" />
         ))}
       </div>
       <div className="photo-gallery-button">
         <a href="/photos" className="view-gallery-btn">📸 See All Photos</a>
       </div>
-    </div>
     </div>
   );
 };

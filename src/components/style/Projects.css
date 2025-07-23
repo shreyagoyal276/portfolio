@@ -39,7 +39,7 @@
 
 .project-timeline {
   font-size: 0.85rem;
-  color: #87b8c8;
+  color: #def4fb;
 }
 
 .project-org {
@@ -101,5 +101,9 @@
   .project-card {
     width: 100%;
     max-width: 360px;
+  }
+  .projects-container{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

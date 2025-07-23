@@ -1,4 +1,4 @@
-.heatmap-container {
+/* .heatmap-container {
     padding: 10px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.03);
@@ -12,7 +12,7 @@
   }
   
   .heatmap-wrapper {
-    min-width: 700px; /* allows scrolling if screen is smaller */
+    min-width: 700px;
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
@@ -67,4 +67,4 @@
     fill: #cccccc;
     font-size: 10px;
   }
-  
+   */
