@@ -1,10 +1,10 @@
+<!-- 
 import React, { useEffect, useState } from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 import "./style/heatmap.css";
 import { subDays, format, eachDayOfInterval } from "date-fns";
 import { Tooltip } from "react-tooltip";
-
 const CompetitiveHeatmap = () => {
   const [heatmapData, setHeatmapData] = useState([]);
 
@@ -117,3 +117,4 @@ const CompetitiveHeatmap = () => {
 };
 
 export default CompetitiveHeatmap;
+-->
