@@ -33,7 +33,7 @@ const hackathons = [
     role: "Team Lead",
     team: "NextGen Navigators",
     project: "Smart Career Guidance Platform",
-    description: "Developed a samrt career guidance platform, with features like quiz to get career suggestions, abroad study info, wrong-path solutions, career exploration tools and also a chatbot for user queries.",
+    description: "Developed a smart career guidance platform, with features like quiz to get career suggestions, abroad study info, wrong-path solutions, career exploration tools and also a chatbot for user queries.",
     tags: ["Career Exploration", "Quiz","Wrong path solution","Chatbot"],
     platform: "MITS Gwalior",
     certificate: "/certificates/code_coalescence2024.png"
@@ -44,7 +44,7 @@ const hackathons = [
     org: "Digital Learning Group of MITS Gwalior",
     team: "Calm Coders",
     role: "Team Lead, ML developer & Ideation",
-    project: "Mind Dump – Mental Clarity Platform",
+    project: "Mind Dump - Mental Clarity Platform",
     description: "A mental-stress reducing platform, allowing users to express, explore, and empower thoughts freely. Designed for mental wellness with interactive and calming UI.",
     tags: ["Mental Health", "Creative UI", "3 Phase","Voice-guided Relaxation session"],
     github: "https://github.com/shreyagoyal276/CalmCoders",
