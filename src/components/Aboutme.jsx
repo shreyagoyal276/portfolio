@@ -2,7 +2,7 @@ import React from 'react';
 import './style/Aboutme.css';
 import Education from './Education';
 import Experiene from './Experience';
-// import CompetitiveHeatmap from './CompetitiveHeatmap';
+import CompetitiveHeatmap from './CompetitiveHeatmap';
 
 const hobbies = [
   "🌌 Stargazing",
@@ -47,10 +47,25 @@ const Aboutme = () => {
         <Experiene />
       </div>
 
-      {/* <div className="heatmap">
-        <h3 className='subheading'>CODING </h3>
+      <div className="heatmap">
+        <h3 className='subheading'>CODING ACTIVITY</h3>
         <CompetitiveHeatmap />
-      </div> */}
+
+        <div className="coding-profiles">
+          <a href="https://leetcode.com/u/iJCTwS5SOZ/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg" alt="LeetCode" />
+          </a>
+          <a href="https://www.codechef.com/users/shreyagoyal276/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codechef.svg" alt="CodeChef" />
+          </a>
+          <a href="https://www.geeksforgeeks.org/user/shreyago82f0/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GFG" />
+          </a>
+          <a href="https://codeforces.com/profile/shreyagoyal276" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@15.7.0/icons/codeforces.svg" alt="Codeforces" />
+          </a>
+        </div>
+      </div>
 
       <h3 className="subheading">HOBBIES</h3>
       <ul className="hobby-list">

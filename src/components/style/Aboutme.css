@@ -133,6 +133,27 @@
   
   /* _________________________________________ */
 
+  .coding-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .coding-profiles img {
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .coding-profiles img:hover{
+    transform: scale(1.05);
+  }
+  
+
+  /* _________________________________________ */
+
 
   .contact-section {
     background: rgba(255, 255, 255, 0.04);
