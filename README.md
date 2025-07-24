@@ -11,6 +11,7 @@ Welcome to the **source code** of my personal **developer portfolio website** �
 - 🛰️ **About Me** – A brief journey into who I am and what drives me.
 - 💻 **Projects & Hackathons** – Real-world, impactful work and creative problem-solving events.
 - 🧠 **Skills & Certificates** – A showcase of my core technical abilities and learning milestones.
+- 💻 **Coding Activity** – Heatmap showing LeetCode + CodeChef consistency and clickable platform logos.
 - 📸 **Photo Gallery** – A Pinterest-style layout to explore some of my favorite captures.
 - 🌠 **Mystery Stars** – Interactive stars that reveal space & science facts (try clicking them!).
 - 🎯 **Responsive Design** – Fully responsive and accessible across devices.
