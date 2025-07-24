@@ -2,7 +2,7 @@
 
 Welcome to the **source code** of my personal **developer portfolio website** – a creative space where **code**, **curiosity**, and a love for **space** come together!
 
-✨ [**Live Portfolio Website**](https://shreygoyal.vercel.app/)
+✨ [**Live Portfolio Website**](https://shreyagoyal276.vercel.app/)
 
 ---
 
